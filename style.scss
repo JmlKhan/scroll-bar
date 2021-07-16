@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgb(213, 228, 198);
+}
+
+.box {
+  width: 350px;
+  height: 200px;
+  background-color: rgb(109, 109, 190);
+  border-radius: 10px;
+  transform: translateX(400%);
+  transition: transform 0.5s ease;
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+.box.show {
+  transform: translateX(0);
+}
